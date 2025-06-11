@@ -2,8 +2,8 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: "Technical Documents site",
-    titleTemplate: ":title - ARC",
+    title: "技術文件網站",
+    //itleTemplate: ":title - ARC",
     description: "Technical Documents written by Jieming Chen",
     lang: "zh-TW",
     // base: "/technical-documents/",
@@ -21,16 +21,16 @@ export default defineConfig({
         // siteTitle: "",
         nav: [
             { text: "Home", link: "/" },
-            { text: "Examples", link: "/markdown-examples" },
-            { text: "Examples", items: [{ text: "Examples", link: "/markdown-examples" }] },
+            { text: "TypeScript", link: "/typescript" },
+            // { text: "Examples", items: [{ text: "Examples", link: "/markdown-examples" }] },
         ],
 
         sidebar: [
             {
-                text: "Examples",
+                text: "清單",
                 items: [
-                    { text: "Markdown Examples", link: "/markdown-examples" },
-                    { text: "Runtime API Examples", link: "/api-examples" },
+                    { text: "TypeScript", link: "/typescript" },
+                    // { text: "Runtime API Examples", link: "/api-examples" },
                 ],
             },
         ],
