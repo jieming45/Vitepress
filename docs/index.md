@@ -10,9 +10,9 @@ hero:
         - theme: brand
           text: TypeScript
           link: /typescript
-        # - theme: alt
-        #   text: API Examples
-        #   link: /api-examples
+        - theme: alt
+          text: JavaScript Modules
+          link: /javascript_module
 # features:
 #     - title: Feature A
 #       details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
