@@ -3,34 +3,28 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "技術文件網站",
-    //itleTemplate: ":title - ARC",
     description: "Technical Documents written by Jieming Chen",
     lang: "zh-TW",
-    // base: "/technical-documents/",
-    cleanUrls: false,
-    // srcDir: "docs",
+    base: "/documents/",
     srcExclude: ["**/README.md", "**/TODO.md"],
-    outDir: "./.vitepress/dist",
     assetsDir: "assets",
     cacheDir: "./.vitepress/.cache",
-    ignoreDeadLinks: false,
-    lastUpdated: false,
+    ignoreDeadLinks: true,
+    lastUpdated: true,
+    cleanUrls: true,
     themeConfig: {
-        // https://vitepress.dev/reference/default-theme-config
-        // logo: '',
-        // siteTitle: "",
+        lastUpdatedText: "最後更新時間",
+        siteTitle: "ARC",
         nav: [
             { text: "Home", link: "/" },
             { text: "TypeScript", link: "/typescript" },
-            // { text: "Examples", items: [{ text: "Examples", link: "/markdown-examples" }] },
         ],
-
         sidebar: [
             {
                 text: "清單",
                 items: [
-                    { text: "TypeScript", link: "/typescript" },
-                    // { text: "Runtime API Examples", link: "/api-examples" },
+                    { text: "TypeScript", link: "/typescript/typescript" },
+                    { text: "JavaScript Module", link: "/javascript_module" },
                 ],
             },
         ],
@@ -40,11 +34,14 @@ export default defineConfig({
             message: "Released under the MIT License.",
             copyright: "Copyright 2025-present Jieming Chen",
         },
+        search: {
+            provider: "local",
+        },
+
         // editLink: {
         //     pattern: "[GITHUB PATH]",
         //     text: "Edit this page on GitHub",
         // },
-        // lastUpdatedText: "更新时间",
     },
     vite: {},
     vue: {},
@@ -56,7 +53,7 @@ export default defineConfig({
             infoLabel: "資訊",
             detailsLabel: "詳細資訊",
         },
-        // lineNumbers: true,
+
         image: {
             lazyLoading: true,
         },
