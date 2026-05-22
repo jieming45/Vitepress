@@ -7,7 +7,7 @@ export default withMermaid(
     title: "技術文件網站",
     description: "Technical Documents written by Jieming Chen",
     lang: "zh-TW",
-    base: "/",
+    base: "/documents/",
     srcExclude: ["**/README.md", "**/TODO.md"],
     assetsDir: "assets",
     cacheDir: "./.vitepress/.cache",
@@ -53,49 +53,7 @@ export default withMermaid(
         provider: "local",
       },
     },
-    vite: {
-      build: {
-        chunkSizeWarningLimit: 1600,
-        rollupOptions: {
-          output: {
-            assetFileNames: (assetInfo) => {
-              if (
-                assetInfo.name &&
-                (assetInfo.name.includes("Travel/Tokyo") ||
-                  assetInfo.name.includes("Travel_Tokyo"))
-              ) {
-                return "Travel/Tokyo/assets/[name]-[hash][extname]";
-              }
-              return "assets/[name]-[hash][extname]";
-            },
-            chunkFileNames: (chunk) => {
-              if (
-                chunk.facadeModuleId?.includes("Travel/Tokyo") ||
-                chunk.name.includes("Travel_Tokyo") ||
-                chunk.name.includes("Travel-Tokyo") ||
-                chunk.name === "travel-tokyo"
-              ) {
-                return "Travel/Tokyo/assets/[name]-[hash].js";
-              }
-              return "assets/[name]-[hash].js";
-            },
-            manualChunks(id) {
-              if (id.includes("Travel/Tokyo")) {
-                return "travel-tokyo";
-              }
-            },
-          },
-        },
-      },
-    },
-    async transformHead({ pageData }) {
-      if (pageData.relativePath.startsWith("Travel/Tokyo/")) {
-        return [
-          ["link", { rel: "stylesheet", href: "/Travel/tokyo.css" }],
-          ["script", { src: "/Travel/tokyo.js" }],
-        ];
-      }
-    },
+    vite: {},
     vue: {},
     markdown: {
       container: {
