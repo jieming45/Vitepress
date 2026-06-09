@@ -50,7 +50,7 @@
 請逐步分析並輸出以下內容：
 
 1. **API分析報告**: 列出每個 API 的功能、參數、返回值，以及與 Legacy 版本的對比分析。輸出至 Markdown 文件中，並且提供說明文字解釋分析報告的內容與邏輯，檔案名稱為api_op_analysis.md。
-2. **參數設定與邏輯分析報告**: 列出每個參數的名稱、類型、預設值、邏輯處理說明，以及與 Legacy 版本的對比分析。輸出至 Markdown 文件中，並且提供說明文字解釋分析報告的內容與邏輯，檔案名稱為api_op_analysis.md。
-3. **流程圖**: 使用 Mermaid.js 或其他工具繪製 API 執行流程圖，說明 Legacy API 與新版 API 的運作方式。流程圖輸出至 Markdown 文件中，並且提供說明文字解釋流程圖的內容與邏輯，檔案名稱為api_op_flowChart.md。
-4. **最佳調整建議**: 根據分析結果，提出針對 API 結構與參數設定的最佳調整建議，確保其功能與原始版本完全一致，並且符合現代化的開發標準。輸出至 Markdown 文件中，並且提供說明文字解釋調整建議的內容與邏輯，檔案名稱為api_op_recommendation.md。
-5. **簡報內容**: 根據分析報告與流程圖，整理簡報內容，說明 API 的運作方式、參數設定與邏輯，以及最佳調整建議。簡報內容輸出至 Markdown 文件中，並且提供說明文字解釋簡報的內容與邏輯，檔案名稱為api_op_presentation.md。
+2. **參數設定與邏輯分析報告**: 列出每個參數的名稱、類型、預設值、邏輯處理說明，以及與 Legacy 版本的對比分析。輸出至 Markdown 文件中，並且提供說明文字解釋分析報告的內容與邏輯，檔案名稱為`C:\Users\Jieming\Documents\GitHub\Vitepress\docs\asuswrt\api_op_analysis.md`。
+3. **流程圖**: 使用 Mermaid.js 或其他工具繪製 API 執行流程圖，說明 Legacy API 與新版 API 的運作方式。流程圖輸出至 Markdown 文件中，並且提供說明文字解釋流程圖的內容與邏輯，檔案名稱為`C:\Users\Jieming\Documents\GitHub\Vitepress\docs\asuswrt\api_op_flowChart.md`。
+4. **最佳調整建議**: 根據分析結果，提出針對 API 結構與參數設定的最佳調整建議，確保其功能與原始版本完全一致，並且符合現代化的開發標準。輸出至 Markdown 文件中，並且提供說明文字解釋調整建議的內容與邏輯，檔案名稱為`C:\Users\Jieming\Documents\GitHub\Vitepress\docs\asuswrt\api_op_recommendation.md`。
+5. **簡報內容**: 根據分析報告與流程圖，整理簡報內容，說明 API 的運作方式、參數設定與邏輯，以及最佳調整建議。簡報內容輸出至 Markdown 文件中，並且提供說明文字解釋簡報的內容與邏輯，檔案名稱為`C:\Users\Jieming\Documents\GitHub\Vitepress\docs\asuswrt\api_op_presentation.md`。
