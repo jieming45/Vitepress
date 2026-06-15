@@ -96,7 +96,7 @@ export default defineConfig(({ mode }) => {
 
 透過環境變數檔案定義開發時所需的變數，使組員不需修改代碼即可切換測試目標：
 
-```env
+```ini
 # .env.development
 # 可以是實際硬體 IP，或是 ASUS Router 預設域名
 VITE_ROUTER_URL=http://192.168.50.1/

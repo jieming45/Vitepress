@@ -235,7 +235,7 @@ Component 應處理使用者可見狀態：
 
 `.env.development`：
 
-```env
+```ini
 VITE_ROUTER_URL=http://www.asusrouter.com/
 VITE_API_BASE_URL=
 ```

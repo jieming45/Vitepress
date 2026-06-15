@@ -60,7 +60,7 @@ import ButtonCounter from './ButtonCounter.vue'
 
 元件可以被重複使用任意多次。每次使用元件都會建立該元件的一個新**實例**。
 
-```template
+```vue-html
 <h1>Here are many child components!</h1>
 <ButtonCounter />
 <ButtonCounter />

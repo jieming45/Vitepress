@@ -35,7 +35,8 @@
 3. 輸出markdown檔案內容到./essentials/資料夾下
 4. 每個檔案內容的第一行加上以下YAML front matter：
 
-```yaml---
+```yaml
+---
 title: <從URL最後的html名稱去掉.html的部分，並將-換成空格後的內容>
 ---
 ```
